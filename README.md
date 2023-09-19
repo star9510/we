@@ -25,9 +25,16 @@
 
 ### 구동환경 세팅 
 - 아래 3가지는 PyCharm Community Edition 2023.1/yolov5/Thermal-Image-Analysis-master 위 링크 혹은 첨부파일 자료 다운로드
+- 진단 열화상 이미지는 "yolov5-master/datadiscovery/images" 에 위치
+
+### 실행방법
+- PyCharm Community Edition 2023.1 실행후 
+- pip install logzero 설치 시행
+- python dd_detect.py 시행
 
 ### 에러대처
 - 만약 실행중 "ImportError:cannot import name 'scale_boxes' from 'yolo5.utils.general' 이 발생할경우 yolov5 버전이 달라서 함수값을 인식 못하는 경우로 scale_boxes => scale_coords 로 변경하면 실행 가능
+- 위의 환경 세팅이 아닌 아나콘다, 주피터 실행시 별도의 tool 설치할 가능성 있음 
   
 ### 기타사항 
 - 세부내용 및 진행은 첨부파일 내 동영상 참조
